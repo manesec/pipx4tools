@@ -1,0 +1,3 @@
+[submodule "src/jwt_tool"]
+	path = src/jwt_tool
+	url = https://github.com/ticarpi/jwt_tool.git
