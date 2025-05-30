@@ -1,3 +1,6 @@
 [submodule "src/jwt_tool"]
 	path = src/jwt_tool
 	url = https://github.com/ticarpi/jwt_tool.git
+[submodule "src/DNSrebinder"]
+	path = src/DNSrebinder
+	url = https://github.com/mogwailabs/DNSrebinder.git

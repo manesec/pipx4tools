@@ -7,15 +7,17 @@ def read_requirements(file_path):
 def install_requirements():
     all_requirements = []
     all_requirements.extend(read_requirements('src/jwt_tool/requirements.txt'))
+    all_requirements.extend(read_requirements('src/DNSrebinder/requirements.txt'))
     return all_requirements
 
 setup(
     name='pipx4tools',
-    version='0.0.1',
+    version='0.0.2',
     packages=find_packages(),
     entry_points={
         'console_scripts': [
             "jwt_tool.py=src.start:start_sign2n",
+            "dnsrebinder.py=src.start:start_dns_rebinder",
         ],
     },
     install_requires=install_requirements(),
