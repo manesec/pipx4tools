@@ -4,3 +4,6 @@
 [submodule "src/DNSrebinder"]
 	path = src/DNSrebinder
 	url = https://github.com/mogwailabs/DNSrebinder.git
+[submodule "src/php_filter_chain_generator"]
+	path = src/php_filter_chain_generator
+	url = https://github.com/synacktiv/php_filter_chain_generator
