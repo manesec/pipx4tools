@@ -8,16 +8,21 @@ def install_requirements():
     all_requirements = []
     all_requirements.extend(read_requirements('src/jwt_tool/requirements.txt'))
     all_requirements.extend(read_requirements('src/DNSrebinder/requirements.txt'))
+    all_requirements.extend(read_requirements('src/STEWS/fingerprint/requirements.txt'))
+    all_requirements.extend(read_requirements('src/STEWS/vuln-detect/requirements.txt'))
     return all_requirements
 
 setup(
     name='pipx4tools',
-    version='0.0.2',
+    version='0.0.3',
     packages=find_packages(),
     entry_points={
         'console_scripts': [
             "jwt_tool.py=src.start:start_sign2n",
             "dnsrebinder.py=src.start:start_dns_rebinder",
+            "php_filter_chain_generator.py=src.start:start_php_filter_chain_generator",
+            "STEWS-fingerprint.py=src.start:start_STEWS_fingerprint",
+            "STEWS-vuln-detect.py=src.start:start_STEWS_vuln_detect"
         ],
     },
     install_requires=install_requirements(),

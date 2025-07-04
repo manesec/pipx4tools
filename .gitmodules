@@ -7,3 +7,6 @@
 [submodule "src/php_filter_chain_generator"]
 	path = src/php_filter_chain_generator
 	url = https://github.com/synacktiv/php_filter_chain_generator
+[submodule "src/STEWS"]
+	path = src/STEWS
+	url = https://github.com/PalindromeLabs/STEWS
