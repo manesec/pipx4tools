@@ -2,3 +2,4 @@ recursive-include src/jwt_tool *
 recursive-include src/DNSrebinder *
 recursive-include src/php_filter_chain_generator *
 recursive-include src/STEWS *
+recursive-include src/peas *

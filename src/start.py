@@ -34,3 +34,9 @@ def start_STEWS_vuln_detect():
     args = sys.argv[1:]
     command = [sys.executable, str(script_path)] + args
     subprocess.run(command)
+
+def start_peas():
+    script_path = Path(__file__).resolve().parent / "peas" / "peas.py"
+    args = sys.argv[1:]
+    command = [sys.executable, str(script_path)] + args
+    subprocess.run(command)

@@ -10,11 +10,12 @@ def install_requirements():
     all_requirements.extend(read_requirements('src/DNSrebinder/requirements.txt'))
     all_requirements.extend(read_requirements('src/STEWS/fingerprint/requirements.txt'))
     all_requirements.extend(read_requirements('src/STEWS/vuln-detect/requirements.txt'))
+    all_requirements.extend(read_requirements('src/peas/requirements.txt'))
     return all_requirements
 
 setup(
     name='pipx4tools',
-    version='0.0.3',
+    version='0.0.4',
     packages=find_packages(),
     entry_points={
         'console_scripts': [
@@ -22,7 +23,8 @@ setup(
             "dnsrebinder.py=src.start:start_dns_rebinder",
             "php_filter_chain_generator.py=src.start:start_php_filter_chain_generator",
             "STEWS-fingerprint.py=src.start:start_STEWS_fingerprint",
-            "STEWS-vuln-detect.py=src.start:start_STEWS_vuln_detect"
+            "STEWS-vuln-detect.py=src.start:start_STEWS_vuln_detect",
+            "peas.py=src.start:start_peas",
         ],
     },
     install_requires=install_requirements(),

@@ -10,3 +10,6 @@
 [submodule "src/STEWS"]
 	path = src/STEWS
 	url = https://github.com/PalindromeLabs/STEWS
+[submodule "src/peas"]
+	path = src/peas
+	url = https://github.com/j0lt-github/python-deserialization-attack-payload-generator
