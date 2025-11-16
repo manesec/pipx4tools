@@ -13,3 +13,6 @@
 [submodule "src/peas"]
 	path = src/peas
 	url = https://github.com/j0lt-github/python-deserialization-attack-payload-generator
+[submodule "src/Werkzeug-Cracker"]
+	path = src/Werkzeug-Cracker
+	url = https://github.com/AnataarXVI/Werkzeug-Cracker.git

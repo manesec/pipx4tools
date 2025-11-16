@@ -40,3 +40,9 @@ def start_peas():
     args = sys.argv[1:]
     command = [sys.executable, str(script_path)] + args
     subprocess.run(command)
+
+def start_Werkzeug_Cracker():
+    script_path = Path(__file__).resolve().parent / "Werkzeug-Cracker" / "werkzeug_cracker.py"
+    args = sys.argv[1:]
+    command = [sys.executable, str(script_path)] + args
+    subprocess.run(command)
